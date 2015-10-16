@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lizie</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+
+<body>
+    <!--form start-->
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>register</legend>
+            <table>
+                <tr>
+                    <th>
+                        <label for="name">Name</label>
+                    </th>
+                    <td>
+                        <input type="text" name="firstname" value="" placeholder="FirstName" maxlength="20" required>
+                        <input type="text" name="lastname" value="" placeholder="LastName" maxlength="20" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email">Email</label>
+                    </th>
+                    <td>
+                        <input type="email" name="email" value="" required placeholder="Enter a valid email address">
+                        <!--hidden input start-->
+                        <input type="hidden" name="email" value="abc@xyz.com" placeholder="Email" readonly="">
+                        <!--hidden input finish-->
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="option">Sex</label>
+                    </th>
+                    <td>
+                        <input type="radio" name="sex" value="female"> female
+                        <input type="radio" name="sex" value="male"> male
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="like">Vehicle</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike
+                        <input type="checkbox" name="vehicle2" value="Car"> I have a car
+                        <input type="checkbox" name="vehicle2" value="Car"> None
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email">hobby</label>
+                    </th>
+                    <td>
+                        <select name="hobby" multiple="multiple" size="6">
+                            <option value="1">game</option>
+                            <option value="2">fishing</option>
+                            <option value="3">swimming</option>
+                            <option value="4">drawing</option>
+                            <option value="5">taking pictures</option>
+                            <option value="6">traveling</option>
+                            <option value="7">playing instrucments</option>
+                            <option value="8">colleting something</option>
+                            <option value="9">learning languages</option>
+                            <option value="10">cooking</option>
+                            <option value="11">writing</option>
+                            <option value="12">community</option>
+                            <option value="13">driving</option>
+                            <option value="14">joging</option>
+                            <option value="15">cycling</option>
+                            <option value="16">reading</option>
+                            <option value="17">singing</option>
+                            <option value="18">dancing</option>
+                            <option value="19">watching movies</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="Browser">Browser</label>
+                    </th>
+                    <td>
+                        <select>
+                            <option value="explorer">explorer</option>
+                            <option value="crome">crome</option>
+                            <option value="spari">spari</option>
+                            <option value="firefox">firefox</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="exdate">Date of Birth</label>
+                    </th>
+                    <td>
+                        <input type="date" id="exdate" name="exdate" placeholder="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="file">File</label>
+                    </th>
+                    <td>
+                        <input type="file" name="Hello">
+                    </td>
+                </tr>
+            </table>
+            <!--form finish-->
+            <!--button start-->
+            <div class="submit">
+                <input type="image" src="img/submit.jpg" alt="Submit" value="submit" width="200" height="50">
+            </div>
+            <!--button finish-->
+        </fieldset>
+    </form>
+</body>
+
+</html>
