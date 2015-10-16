@@ -1,0 +1,61 @@
+/*sign up css*/
+
+table {
+    width: 900px;
+    margin: 30px auto;
+    border: 2px dashed #ccc;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+table tr td {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+table tr th {
+    background-color: #8fceef;
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+table tr label {
+    color: #fff;
+}
+
+input,
+select {
+    padding: 3px;
+}
+
+.submit {
+    width: 900px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+.input_s {
+    width: 70px;
+}
+
+.submit input {
+    padding: 0;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+/*common css*/
+*{
+	padding: 0;
+	margin: 0;
+}
+
