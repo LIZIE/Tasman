@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>exercise</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <style type="text/css">
+    body {
+        background: url(bg.jpg);
+        background-size: 100%;
+    }
+    
+    .container-fluid {
+        width: 60%;
+        margin: 0 auto;
+    }
+    
+    nav {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    
+    nav li a {
+        color: #000;
+    }
+    
+    nav li a:hover {
+        color: #730707;
+    }
+    
+    .margin_top {
+        margin-top: 10px;
+    }
+    
+    button {
+        width: 30%;
+    }
+    </style>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <div class="container-fluid">
+        <!--nav start-->
+        <nav class="navbar-default">
+            <ul class="nav nav-pills nav-justified ">
+                <li role="presentation"><a href="bootstrap_page.html"><i class="glyphicon glyphicon-heart"></i> Home</a></li>
+                <li role="presentation"><a href="#"><i class="glyphicon glyphicon-star"></i> Sunday</a></li>
+                <li role="presentation"><a href="form.html"><i class="glyphicon glyphicon-user"></i> Form</a></li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      Dropdown <span class="caret"></span>
+                    </a>
+                    <!--dropdwon menu-->
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">exercise01</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">exercise02 </a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">exercise03 </a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">exercise04 </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--nav finish-->
+        <div class="jumbotron margin_top">
+            <!--form start-->
+            <form action="#" method="post" role="form" >
+                <div class="form-inline">
+                    <label for="name">Name</label>
+                    <input type="text" name="firstname" value="" placeholder="FirstName" maxlength="20" required class="form-control">
+                    <input type="text" name="lastname" value="" placeholder="LastName" maxlength="20" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" value="" required placeholder="Enter a valid email address" class="form-control">
+                    <!--hidden input start-->
+                    <input type="hidden" name="email" value="abc@xyz.com" placeholder="Email" readonly="" class="form-control">
+                    <!--hidden input finish-->
+                </div>
+                <div class="form-group">
+                    <label for="option">Sex</label>
+                    <input type="radio" name="sex" value="female"> female
+                    <input type="radio" name="sex" value="male"> male
+                </div>
+                <div class="form-group">
+                    <label for="like">Vehicle</label>
+                    <input type="checkbox" name="vehicle1" value="Bike"> I have a bike
+                    <input type="checkbox" name="vehicle2" value="Car"> I have a car
+                    <input type="checkbox" name="vehicle2" value="Car"> None
+                </div>
+                <div class="form-group">
+                    <label for="sel1" for="email">hobby</label>
+                    <select name="hobby" multiple="multiple" size="6" class="form-control" id="sel1">
+                        <option value="1">game</option>
+                        <option value="2">fishing</option>
+                        <option value="3">swimming</option>
+                        <option value="4">drawing</option>
+                        <option value="5">taking pictures</option>
+                        <option value="6">traveling</option>
+                        <option value="7">playing instrucments</option>
+                        <option value="8">colleting something</option>
+                        <option value="9">learning languages</option>
+                        <option value="10">cooking</option>
+                        <option value="11">writing</option>
+                        <option value="12">community</option>
+                        <option value="13">driving</option>
+                        <option value="14">joging</option>
+                        <option value="15">cycling</option>
+                        <option value="16">reading</option>
+                        <option value="17">singing</option>
+                        <option value="18">dancing</option>
+                        <option value="19">watching movies</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="Browser">Browser</label>
+                    <select class="form-control" id="sel1">
+                        <option value="explorer">explorer</option>
+                        <option value="crome">crome</option>
+                        <option value="spari">spari</option>
+                        <option value="firefox">firefox</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exdate">Date of Birth</label>
+                    <input type="date" id="exdate" name="exdate" placeholder="" required class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="file">File</label>
+                    <input type="file" name="Hello">
+                </div>
+                <!--button start-->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+                <!--button finish-->
+            </form>
+            <!--form finish-->
+        </div>
+    </div>
+</body>
+
+</html>
